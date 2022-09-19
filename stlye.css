@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#navbar{
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+    transition: 0.4s;
+    display: block;
+    top: 0;
+    position: fixed;
+    transition: top 0.4ms;
+    overflow: hidden;
+
+    width: 100%;
+
+    z-index: 99;
+}
+main{
+
+display: flex;
+flex-direction: row;
+flex-grow: 1;
+}
+aside img{
+    width: 100%;
+}
+aside{
+    border: #4CAF50 1px solid;
+    height: 500px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.content{
+    flex-grow: 1;
+    padding: 10px;
+}
+.img-logo{
+    float: left;
+}
+
+.navbar{
+    float: right;
+}
+.img-logo h1{
+    float: right;
+    display: block;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.img-logo img{
+    
+    width: 50px;
+    height: 50px;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    float: left;
+    display: block;
+    padding: 14px;
+}
+ul li a{
+    display: block;
+   
+    text-align: center;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    box-shadow: 10px 10px 5px #000 ;
+transition: 1ms;
+}
+.jumbotron{
+
+
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    top: 10px;
+    overflow: hidden;
+}
+.jumbotron .img-backround img{
+    width: 500px;
+    height: 500px;
+}
+.jumbotron .readmore img{
+    width: 100px;
+}
+.jumbotron .readmore{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.jumbotron .readmore h1{
+    font-size: 40px;
+    margin-top: 70px;
+    color: rgb(68, 68, 68);
+}
+.jumbotron .readmore p{
+    font-size: 20px;
+
+    color: rgb(68, 68, 68);
+    text-align: left;
+}
+.btn-green{
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #4CAF50;
+    margin-top: 100px;
+}
+.btn-green:hover{
+    background-color: #fff;
+    border-radius: 5px;
+    color: #4CAF50;
+    border: #4CAF50 3px solid;
+}
+.about-kotlin{
+    background-color: rgb(241, 241, 241);
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.fungsi-fload{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img-kotlin{
+    padding: 20px;
+}
+.img-kotlin img{
+    width: 200px;
+}
+.img-kotlin h1{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.combo-box {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.combo-box .box{
+    flex-grow: 1;
+    transition: transform .2s;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: #4CAF50 1px solid;
+}
+.combo-box .box:hover{
+    -ms-transform: scale(1.0); /* IE 9 */
+    -webkit-transform: scale(1.0); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+.combo-box .box img{
+    width: 200px;
+
+    border-radius: 10px;
+}
+.story{
+    padding: 20px;
+    background-color: rgb(241, 241, 241);
+    overflow: hidden;
+}
+.story .foto img{
+    border-radius: 15px;
+    float: left;
+    margin-right: 50px;
+}
+.story .cerita{
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+footer{
+    clear: both;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+
+}
+footer a{
+    text-decoration: none;
+}
+@media screen and (max-width: 513px) {
+    ul li{
+        float: none;
+    }
+    header{
+        text-align: center;
+        padding: 20px 10px !important;  
+    }
+    li a{
+        display: block;
+        padding: 14px;
+        align-items: center;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+    .combo-box{
+        flex-grow: 0;
+        flex-direction: column;
+    }
+    main{
+        padding: 0;
+        margin-top: 400px;
+        flex-grow: 0;
+        flex-direction: column;
+    }
+    .jumbotron{
+        padding-left: 0;
+        padding-right: 0;
+        flex-grow: 0;
+        overflow: auto;
+        flex-direction: column;
+    }
+    .story .foto img{
+        width: 450px;
+    }
+    .jumbotron .readmore{
+       text-align: center;
+    }
+    .about-kotlin{
+        padding-left: 0;
+        padding-right: 0;
+        flex-grow: 0;
+        overflow: auto;
+        flex-direction: column;
+    }
+    .img-kotlin{
+        text-align: center;
+    }
+
+ }
